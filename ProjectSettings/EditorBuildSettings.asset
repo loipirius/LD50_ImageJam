@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Runner.unity
     guid: 8c19383b3d1ca80428bb5ac74b0d1d47
   - enabled: 1
+    path: Assets/Scenes/Jumper.unity
+    guid: 72f5700fe43ec984fa6f794ed9242e11
+  - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: dbf5f28a33f304b49921207da600dc36
   m_configObjects: {}

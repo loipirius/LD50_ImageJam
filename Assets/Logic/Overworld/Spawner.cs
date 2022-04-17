@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class Spawner : MonoBehaviour
 {
     public int numberToSpawn;
-    public List<GameObject> spawnPool;
+    public GameObject[] spawnPool;
     public GameObject quad;
     public bool timeToSpawn;
 
@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
         Vector2 pos;
         for (int i = 0; i < numberToSpawn; i++)
         {
-            randomItem = Random.Range(0, spawnPool.Count);
+            randomItem = Random.Range(0, spawnPool.Length);
             toSPawn = spawnPool[randomItem];
 
             screenX = Random.Range(c.bounds.min.x, c.bounds.max.x);

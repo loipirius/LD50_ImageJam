@@ -8,6 +8,7 @@ TagManager:
   - GameManager
   - Spawner
   - Portal
+  - Platform
   layers:
   - Default
   - TransparentFX

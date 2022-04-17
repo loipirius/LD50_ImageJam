@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     public GameObject mySpawner;
     public GameObject myCanvas;
     public GameObject myEventSystem;
+    public GameObject myWalls;
     
     
     
@@ -54,6 +55,7 @@ public class GameManager : MonoBehaviour
         switch (myGameState)
         {
             case GameState.Game:
+                myWalls.SetActive(true);
                 if (myPlayer.activeSelf == false)
                 {
                     myPlayer.SetActive(true);
@@ -78,6 +80,7 @@ public class GameManager : MonoBehaviour
             
             case GameState.MiniGame:
                 Scorer();
+                myWalls.SetActive(false);
                 Debug.Log("you are playing a minigame!"); 
                 break;
 
